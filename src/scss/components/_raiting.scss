@@ -1,0 +1,33 @@
+.raiting {
+    padding: 13px 23px;
+    border-radius: 13px;
+    background-color: #fff9e7;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    &__capture {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 164%;
+        color: #101010;
+    }
+    &__value {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &__points {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 105%;
+        color: #101010;
+    }
+}

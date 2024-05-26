@@ -1,0 +1,48 @@
+.blog-section {
+  padding: 45px 0;
+  &__title {
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 30px;
+    @include small-tablet {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+    .blog-item {
+      width: 100%;
+    }
+  }
+
+  &__buttons {
+    margin-bottom: 35px;
+  }
+
+  &__btn {
+    flex-shrink: 0;
+    border: 1px solid #6fc727;
+    border-radius: 90px;
+    padding: 9px 21px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    color: #101010;
+    width: auto;
+    cursor: pointer;
+    transition: color .3s ease-out, background-color .3s ease-out;
+    @include hover {
+      background-color: #6fc727;
+      color: #101010;
+    }
+    &.active {
+      background-color: #6fc727;
+      color: #101010;
+    }
+  }
+}

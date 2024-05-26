@@ -1,0 +1,34 @@
+<form class="form settings-payment settings-main__content" data-settings-content="payment">
+  <span class="settings-payment__desc">
+    Есть много различных платежных систем, и выбор зависит от различных факторов, таких как услуг, которые вы
+    предлагаете:
+  </span>
+
+  <label class="form__label settings-payment__label">
+    <span class="form__capture">Банковская карта:</span>
+    <div class="form__input-wrapper form__input-wrapper--long">
+      <input type="text" class="form__input" placeholder="Введите номер карты. Например: 1234 5678 9012 3456">
+      <div class="form__cards">
+        <img src="./img/visa.png" alt="">
+        <img src="./img/mastercard.png" alt="">
+        <img src="./img/mir.png" alt="">
+      </div>
+    </div>
+  </label>
+  <label class="form__label settings-payment__label">
+    <span class="form__capture">Чеки о пополнениях:</span>
+    <input type="checkbox" id="checks" class="visually-hidden form__rcheck">
+    <label for="checks" class="form__string">
+      <span class="form__checkbox">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.03679 12.0368C4.75274 12.0368 4.46839 11.9284 4.2517 11.7116L0.325284 7.78514C-0.108428 7.35143 -0.108428 6.64836 0.325284 6.21465C0.758996 5.78094 1.46206 5.78094 1.89578 6.21465L5.03679 9.35567L12.1042 2.28837C12.5379 1.85479 13.2412 1.85466 13.6746 2.28837C14.1084 2.72208 14.1084 3.42531 13.6746 3.85886L5.82206 11.7116C5.6052 11.9283 5.32098 12.0368 5.03679 12.0368Z"
+            fill="#101010" />
+        </svg>
+      </span>
+      <span class="form__name">Отображать чеки о поплнениях банковской картой на странице финстатистики</span>
+    </label>
+
+  </label>
+  <button class="btn btn-reset form__btn">Сохранить кошельки</button>
+</form>

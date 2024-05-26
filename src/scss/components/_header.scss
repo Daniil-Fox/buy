@@ -1,0 +1,269 @@
+.header {
+  background-color: #fff;
+  padding: 20px 0;
+
+  @include tablet {
+    padding: 20px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+  }
+
+  &__acc {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    img {
+      display: block;
+      width: 45px;
+      height: 45px;
+      border-radius: 100%;
+    }
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 3.5px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #101010;
+  }
+
+  &__role {
+    display: block;
+    font-weight: 500;
+    font-size: 12px;
+    color: #2f4aac;
+  }
+
+  &__logo {
+    img {
+      height: 40px;
+
+      @include tablet {
+        height: 20px;
+      }
+    }
+
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      fill: #B6B6CA;
+      transition: fill .3s ease-out;
+    }
+
+    span {
+      font-family: var(--font-family);
+      font-weight: 500;
+      font-size: 15px;
+      color: #101010;
+    }
+
+    @include hover {
+      text-decoration: underline;
+
+      svg {
+        fill: #6fc727;
+      }
+    }
+  }
+}
+
+.header-mob {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+
+
+  @include tablet {
+    display: flex;
+  }
+
+
+  &__burger {
+    display: block;
+    width: 24px;
+    height: 16px;
+    position: relative;
+    z-index: 111;
+
+    .line {
+      position: relative;
+      width: 100%;
+      height: 2px;
+      background-color: #101010;
+      border-radius: 3px;
+      transition: transform .3s ease-out;
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #101010;
+        border-radius: 3px;
+        transition: transform .3s ease-out, opacity .3s ease-out;
+      }
+
+      &::before {
+        top: 6px;
+      }
+
+      &::after {
+        top: 13px;
+      }
+    }
+
+
+    &.active {
+      .line {
+        transform: rotate(45deg);
+
+        &::before {
+          transform: rotate(-90deg) translate(6px);
+        }
+
+        &::after {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+
+  &__left {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  &__link {
+    display: block;
+    width: 24px;
+    height: 24px;
+
+    position: relative;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .counter {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+      width: 14px;
+      height: 14px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 100%;
+      background-color: #6fc727;
+
+      font-weight: 700;
+      font-size: 9px;
+      color: #fff;
+    }
+  }
+}
+
+.header-data {
+  position: absolute;
+  right: 0;
+  top: 140%;
+  background-color: #fff;
+  border-radius: 13px;
+  box-shadow: 0 4px 13px 0 rgba(30, 35, 66, 0.11);
+  background: #fff;
+  padding: 15px 20px;
+  opacity: 0;
+  z-index: -1;
+  transform: translateY(-200%);
+  transition: transform .4s ease-out, z-index .1s ease-out, opacity .5s ease-out;
+
+  &.active {
+    transform: translateY(0);
+    opacity: 1;
+    z-index: 10;
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+
+  &__btn {
+    flex: 1 0 auto;
+    width: auto;
+    padding: 13px;
+    font-size: 13px;
+  }
+
+  &__list {}
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 14px;
+        color: #101010;
+      }
+    }
+  }
+}

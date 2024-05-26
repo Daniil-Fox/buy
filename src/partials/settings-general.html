@@ -1,0 +1,66 @@
+<form action="post" class="form settings-general settings-main__content active" data-settings-content="general">
+  <div class="settings-general__image settings-image">
+    <label for="input-image" class="settings-image__label">
+      <div class="settings-image__file">
+        <img src="" alt="">
+        <div class="settings-image__plus">
+          <svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_20842_1476)">
+              <path
+                d="M31.4999 0C14.1308 0 0 14.1308 0 31.4999C0 48.8689 14.1308 62.9998 31.4999 62.9998C48.8689 62.9998 62.9998 48.869 62.9998 31.4999C62.9998 14.1307 48.8689 0 31.4999 0ZM31.4999 59.0623C16.302 59.0623 3.9375 46.6978 3.9375 31.4999C3.9375 16.302 16.302 3.9375 31.4999 3.9375C46.6978 3.9375 59.0623 16.3019 59.0623 31.4999C59.0623 46.6978 46.6978 59.0623 31.4999 59.0623ZM48.9725 31.4999C48.9725 32.5872 48.091 33.4686 47.0038 33.4686H33.4686V47.0038C33.4686 48.0911 32.5871 48.9725 31.4999 48.9725C30.4126 48.9725 29.5311 48.0911 29.5311 47.0038V33.4686H15.996C14.9087 33.4686 14.0272 32.5872 14.0272 31.4999C14.0272 30.4125 14.9087 29.5311 15.996 29.5311H29.5311V15.996C29.5311 14.9086 30.4126 14.0272 31.4999 14.0272C32.5871 14.0272 33.4686 14.9086 33.4686 15.996V29.5311H47.0038C48.091 29.5311 48.9725 30.4126 48.9725 31.4999Z"
+                fill="#D5D8E0" />
+            </g>
+            <defs>
+              <clipPath id="clip0_20842_1476">
+                <rect width="63" height="63" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+      <button class="btn-reset settings-image__btn btn--gray btn">Выбрать фото</button>
+    </label>
+    <input type="file" id="input-image" class="visually-hidden">
+    <span class="settings-image__look">
+      Как выглядит мой профиль <a href="#">Перейти</a>
+    </span>
+  </div>
+
+  <label class="form__label">
+    <span class="form__capture">Логин:</span>
+    <input type="text" class="form__input" placeholder="ivanov1993">
+  </label>
+  <label class="form__label">
+    <span class="form__capture">E-mail:</span>
+    <input type="email" class="form__input" placeholder="ivanov1993@yandex.ru">
+  </label>
+  <label class="form__label">
+    <span class="form__capture">Телефон:</span>
+    <input type="tel" class="form__input" placeholder="+7 (987) 987 60 78">
+  </label>
+  <label class="form__label">
+    <span class="form__capture">Дата рождения:</span>
+    <input type="date" class="form__input" placeholder="21.05.1985">
+  </label>
+
+  <div class="form__row">
+    <span class="form__capture">Пол:</span>
+    <input type="radio" name="sex" id="male" class="visually-hidden">
+    <label for="male" class="form__string">
+      <span class="form__radio"></span>
+      <span class="form__name">Мужчина</span>
+    </label>
+    <input type="radio" name="sex" id="female" class="visually-hidden">
+    <label for="female" class="form__string">
+      <span class="form__radio"></span>
+      <span class="form__name">Женщина</span>
+    </label>
+  </div>
+
+  <label class="form__label">
+    <span class="form__capture">Город:</span>
+    <input type="text" class="form__input" placeholder="Казань">
+  </label>
+
+  <button class="btn-reset btn">Сохранить</button>
+</form>

@@ -1,0 +1,25 @@
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  li {
+    font-weight: 400;
+    font-size: 13px;
+    color: #101010;
+
+    position: relative;
+
+    &:not(:last-child) {
+      padding-right: 12px;
+
+      &::after {
+        content: ">";
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.aside {
+
+
+  &__info {
+    box-shadow: 0 4px 13px 0 rgba(30, 35, 66, 0.11);
+    background: #fff;
+    border-radius: 13px;
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__block {
+    background-color: #fff;
+    box-shadow: 0 4px 13px 0 rgba(30, 35, 66, 0.11);
+    padding: 20px;
+    border-radius: 13px;
+  }
+  &__raiting {
+    margin-bottom: 27px;
+  }
+  &__list {
+    margin-bottom: 27px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    &:not(:last-child){
+      margin-bottom: 15px;
+    }
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+    span {
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 164%;
+      color: #101010;
+    }
+  }
+  &__avatar {
+    margin-bottom: 15px;
+
+    border-radius: 100%;
+    width: 127px;
+    height: 127px;
+    border: 4px solid #dbdee8;
+    padding: 4px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 100%;
+    }
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 2.5px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #101010;
+  }
+
+  &__role {
+    display: block;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    color: #2f4aac;
+  }
+
+  &__info {
+    margin-bottom: 20px;
+  }
+
+  &__edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    width: 100%;
+    background-color: #dbdee8;
+    border-radius: 13px;
+    font-weight: 500;
+    font-size: 13px;
+    text-align: center;
+    color: #101010;
+  }
+
+  &__btn {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+
+.video {
+  height: 230px;
+  border-radius: 13px;
+  overflow: hidden;
+
+  position: relative;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__capture {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  &__btn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #fff;
+
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

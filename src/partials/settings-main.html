@@ -1,0 +1,20 @@
+<section class="settings-main">
+  <div class="">
+    <h2 class="title2 settings-main__title">Настройки</h2>
+    <div class="settings-main__options">
+      <div class="settings-main__item active" data-settings="general">
+        Общие настройки
+      </div>
+      <div class="settings-main__item" data-settings="safety">
+        Безопасность
+      </div>
+      <div class="settings-main__item" data-settings="payment">
+        Платежные данные
+      </div>
+    </div>
+
+    @include('./settings-general.html')
+    @include('./settings-safety.html')
+    @include('./settings-payment.html')
+  </div>
+</section>

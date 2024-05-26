@@ -1,0 +1,138 @@
+.exercises-section {
+  padding: 45px 0;
+
+  @include mobile {
+    padding: 30px 0;
+  }
+  &__container {
+    align-items: flex-start;
+  }
+  &__body {
+    grid-column: 8 span;
+    @include tablet {
+      width: 100%;
+    }
+  }
+  &__chapters {
+    grid-column: 4 span;
+
+    box-shadow: 0 4px 13px 0 rgba(30, 35, 66, 0.11);
+    background: #fff;
+    border-radius: 13px;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+  &__title {
+    text-align: left;
+  }
+}
+.exersice {
+  border-radius: 13px;
+  box-shadow: 0 4px 13px 0 rgba(30, 35, 66, 0.11);
+  background: #fff;
+  &:not(:last-child){
+    margin-bottom: 25px;
+  }
+  &__top {
+    padding: 21px 30px 28px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  &__bottom {
+    border-top: 1px solid #dee1e9;
+    padding: 15px 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    @include small-tablet {
+
+    }
+  }
+
+  &__links {
+    margin-left: auto;
+  }
+  &__right {
+    margin-left: 30px;
+    @include small-tablet {
+      width: 100%;
+      margin-left: 0;
+    }
+    @include mobile {
+      .response-top__btn {
+        width: 100%;
+      }
+    }
+  }
+  &__title {
+    display: block;
+    margin-bottom: 12px;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: #101010;
+  }
+  &__created {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 164%;
+    color: #101010;
+  }
+  &__price {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: #101010;
+    font-weight: 600;
+    text-align: right;
+
+    @include small-tablet {
+      text-align: left;
+    }
+  }
+  &__responses {
+    font-weight: 600;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 164%;
+    color: #fff;
+    border-radius: 90px;
+    background-color: #ff3a44;
+  }
+}
+
+
+.chapter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 27px;
+  &:not(:last-child){
+    border-bottom: 1px solid #dee1e9;
+  }
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 164%;
+      color: #fff;
+      background-color: #b6b6ca;
+      padding: 0 10px;
+      border-radius: 90px;
+    }
+  }
+}

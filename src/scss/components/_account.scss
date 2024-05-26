@@ -1,0 +1,151 @@
+.account {
+    grid-column: 8 span;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 13px 0 rgba(30, 35, 66, 0.11);
+    border-radius: 13px;
+    &__grid {
+      @include tablet {
+        flex-direction: column;
+      }
+    }
+    &__info {
+      display: none;
+      @include mobile {
+        display: block;
+      }
+    }
+    &__container {
+        display: flex;
+        align-items: flex-start;
+        gap: 30px;
+
+        @include mobile {
+          flex-direction: column;
+        }
+    }
+
+    &__image {
+        flex-shrink: 0;
+
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        img {
+          flex-shrink: 0;
+          width: 137px;
+          height: 137px;
+          border-radius: 100%;
+          overflow: hidden;
+
+          @include mobile {
+            width: 114px;
+            height: 114px;
+          }
+        }
+    }
+
+    &__name {
+        display: block;
+        margin-bottom: 7px;
+        font-weight: 600;
+        font-size: 24px;
+        color: #101010;
+
+        @include mobile {
+          display: none;
+          font-size: 20px;
+        }
+
+        &--mob {
+          display: none;
+
+          @include mobile {
+            display: block;
+          }
+        }
+    }
+
+    &__prof {
+        display: block;
+        margin-bottom: 18px;
+        font-weight: 500;
+        font-size: 13px;
+        color: #2f4aac;
+
+        @include mobile {
+          display: none;
+        }
+
+        &--mob {
+          display: none;
+
+          @include mobile {
+            display: block;
+          }
+        }
+    }
+    &__desc {
+        margin: 0;
+        margin-bottom: 25px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 138%;
+        color: #101010;
+    }
+
+    &__block{
+        &:not(:last-child){
+            margin-bottom: 25px;
+        }
+    }
+
+    &__capture {
+        display: block;
+        margin-bottom: 7px;
+        font-weight: 600;
+        font-size: 16px;
+        color: #101010;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        &:not(:last-child){
+            margin-bottom: 7px;
+        }
+        svg {
+            width: 12px;
+            height: 12px;
+        }
+
+        span {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 138%;
+            color: #101010;
+        }
+    }
+
+    &__skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px 11px;
+        li {
+            border-radius: 90px;
+
+            background: #eceef5;
+
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 138%;
+            color: #101010;
+
+            a {
+                display: block;
+                padding: 5px 12px;
+                color: inherit;
+            }
+        }
+    }
+}
