@@ -1,0 +1,26 @@
+.find {
+  padding: 50px 0;
+
+  &__title {
+    max-width: 812px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  &__modal {
+    display: flex;
+    justify-content: center;
+  }
+  .form {
+    &__label {
+      &:not(:last-of-type){
+        margin-bottom: 16px;
+      }
+      &:last-of-type {
+        margin-bottom: 30px;
+      }
+    }
+    &__btn {
+      width: 100%;
+    }
+  }
+}

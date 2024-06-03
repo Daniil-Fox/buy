@@ -1,0 +1,14 @@
+.orders-section {
+  padding: 50px 0;
+  .grid-container {
+    align-items: flex-start;
+  }
+  &__title {
+    text-align: left;
+  }
+  &__items {
+
+    grid-column: 8 span;
+  }
+
+}
