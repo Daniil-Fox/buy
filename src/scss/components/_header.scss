@@ -58,6 +58,8 @@
   }
 
   &__logo {
+    display: flex;
+    align-items: center;
     img {
       height: 40px;
 
@@ -161,10 +163,21 @@
     }
   }
 
-
+  &__enter {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-weight: 500;
+    font-size: 15px;
+    color: #101010;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
   &__left {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 10px;
   }
 

@@ -17,7 +17,9 @@
                       </svg>
                       Название задачи:
                 </span>
-                <input type="text" placeholder="Введите название задачи" class="form__input"> 
+                <div class="form__input-wrapper form__input-wrapper--long">
+                  <input type="text" placeholder="Введите название задачи" class="form__input">
+                </div>
             </label>
 
             <label class="form__label task__label">
@@ -53,7 +55,7 @@
                     Прикрепить файл
                   </span>
                   <input type="file" class="visually-hidden">
-                 
+
             </label>
             <div class="form__label">
                 <div class="form__capture">
@@ -92,9 +94,11 @@
                             </svg>
                           </div>
                           <div class="custom-select__dropdown">
-                            <div class="custom-select__item">Рубрика</div>
-                            <div class="custom-select__item">Рубрика</div>
-                            <div class="custom-select__item">Рубрика</div>
+                            <div class="custom-select__dropdown-wrapper">
+                              <div class="custom-select__item">Рубрика</div>
+                              <div class="custom-select__item">Рубрика</div>
+                              <div class="custom-select__item">Рубрика</div>
+                            </div>
                           </div>
                         </div>
                     </div>
@@ -120,9 +124,11 @@
                             </svg>
                           </div>
                           <div class="custom-select__dropdown">
-                            <div class="custom-select__item">Рубрика</div>
-                            <div class="custom-select__item">Рубрика</div>
-                            <div class="custom-select__item">Рубрика</div>
+                            <div class="custom-select__dropdown-wrapper">
+                              <div class="custom-select__item">Рубрика</div>
+                              <div class="custom-select__item">Рубрика</div>
+                              <div class="custom-select__item">Рубрика</div>
+                            </div>
                           </div>
                         </div>
                     </div>
@@ -148,9 +154,11 @@
                             </svg>
                           </div>
                           <div class="custom-select__dropdown">
-                            <div class="custom-select__item">Рубрика</div>
-                            <div class="custom-select__item">Рубрика</div>
-                            <div class="custom-select__item">Рубрика</div>
+                            <div class="custom-select__dropdown-wrapper">
+                              <div class="custom-select__item">Рубрика</div>
+                              <div class="custom-select__item">Рубрика</div>
+                              <div class="custom-select__item">Рубрика</div>
+                            </div>
                           </div>
                         </div>
                     </div>
@@ -194,14 +202,16 @@
                             </svg>
                           </div>
                           <div class="custom-select__dropdown">
-                            <div class="custom-select__item">Рубрика</div>
-                            <div class="custom-select__item">Рубрика</div>
-                            <div class="custom-select__item">Рубрика</div>
+                            <div class="custom-select__dropdown-wrapper">
+                              <div class="custom-select__item">Рубрика</div>
+                              <div class="custom-select__item">Рубрика</div>
+                              <div class="custom-select__item">Рубрика</div>
+                            </div>
                           </div>
                         </div>
                     </div>
                     <label class="form__label">
-                        <input type="date" class="form__date" placeholder="Дата"> 
+                        <input type="date" class="form__date" placeholder="Дата">
                     </label>
                 </div>
             </div>
@@ -220,7 +230,9 @@
                       </svg>
                       Цена:
                 </div>
-                <input type="text" class="form__input" placeholder="Введите цену">
+                <div class="form__input-wrapper form__input-wrapper--long">
+                  <input type="text" class="form__input" placeholder="Введите цену">
+                </div>
             </label>
             <div class="task__bottom">
                 <button class="form__btn btn btn-reset task__btn">Разместить задание</button>

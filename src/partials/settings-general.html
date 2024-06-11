@@ -28,19 +28,27 @@
 
   <label class="form__label">
     <span class="form__capture">Логин:</span>
-    <input type="text" class="form__input" placeholder="ivanov1993">
+    <div class="form__input-wrapper">
+      <input type="text" class="form__input" placeholder="ivanov1993">
+    </div>
   </label>
   <label class="form__label">
     <span class="form__capture">E-mail:</span>
-    <input type="email" class="form__input" placeholder="ivanov1993@yandex.ru">
+    <div class="form__input-wrapper form-input-error">
+      <input type="email" class="form__input" placeholder="ivanov1993@yandex.ru">
+    </div>
   </label>
   <label class="form__label">
     <span class="form__capture">Телефон:</span>
-    <input type="tel" class="form__input" placeholder="+7 (987) 987 60 78">
+      <div class="form__input-wrapper">
+        <input type="tel" class="form__input" placeholder="+7 (987) 987 60 78">
+      </div>
   </label>
   <label class="form__label">
     <span class="form__capture">Дата рождения:</span>
-    <input type="date" class="form__input" placeholder="21.05.1985">
+      <div class="form__input-wrapper">
+        <input type="date" class="form__input" placeholder="21.05.1985">
+      </div>
   </label>
 
   <div class="form__row">
@@ -59,8 +67,24 @@
 
   <label class="form__label">
     <span class="form__capture">Город:</span>
-    <input type="text" class="form__input" placeholder="Казань">
+    <div class="form__input-wrapper">
+      <input type="text" class="form__input" placeholder="Казань">
+    </div>
   </label>
-
+  <label class="form__label">
+    <span class="form__capture">Вы по специальности:</span>
+      <div class="form__input-wrapper">
+        <input type="text" class="form__input" placeholder="Специальность">
+      </div>
+  </label>
+  <label class="form__label task__label">
+    <span class="form__capture">
+      Информация о вас:
+    </span>
+    <div class="form__input-wrapper">
+      <textarea class="form__area" minlength="100" maxlength="1500" placeholder="Навыки, опыт, специализация..."></textarea>
+    <span class="form__noty">0 из 1500 символов (минимум 100)</span>
+    </div>
+</label>
   <button class="btn-reset btn">Сохранить</button>
 </form>

@@ -53,16 +53,22 @@
 
       <label class="form__label s-form__label">
         <span class="form__capture">Описание:</span>
-        <textarea class="form__area" minlength="100" maxlength="1500" placeholder="Опишите чем Вы можете помочь заказчику и как решить его задачу"></textarea>
+        <div class="form__input-wrapper form__input-wrapper--long">
+          <textarea class="form__area" minlength="100" maxlength="1500" placeholder="Опишите чем Вы можете помочь заказчику и как решить его задачу"></textarea>
+        </div>
         <span class="form__noty">0 из 1500 символов (минимум 100)</span>
       </label>
       <label class="form__label">
         <span class="form__capture">Стоимость:</span>
-        <input type="text" class="form__input" placeholder="Введите цену">
+        <div class="form__input-wrapper form__input-wrapper--long">
+          <input type="text" class="form__input" placeholder="Введите цену">
+        </div>
       </label>
       <label class="form__label">
         <span class="form__capture">Название задания:</span>
-        <input type="text" class="form__input" placeholder="Название">
+        <div class="form__input-wrapper form__input-wrapper--long">
+          <input type="text" class="form__input" placeholder="Название">
+        </div>
       </label>
 
       <div class="s-form__select form__select" style="position: relative;">
@@ -86,9 +92,11 @@
             </svg>
           </div>
           <div class="custom-select__dropdown">
-            <div class="custom-select__item">1 день</div>
-            <div class="custom-select__item">2 дня</div>
-            <div class="custom-select__item">3 дня</div>
+            <div class="custom-select__dropdown-wrapper">
+              <div class="custom-select__item">1 день</div>
+              <div class="custom-select__item">2 дня</div>
+              <div class="custom-select__item">3 дня</div>
+            </div>
           </div>
         </div>
     </div>

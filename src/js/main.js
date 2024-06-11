@@ -48,3 +48,15 @@ accInfoBtn?.addEventListener("click", (e) => {
   const data = document.querySelector(".header-data");
   data.classList.toggle("active");
 });
+
+
+const formInputs = document.querySelectorAll('.form__label')
+
+if(formInputs && formInputs.length > 0){
+  formInputs.forEach(input => {
+    input.addEventListener('click', e => {
+      const plug = input.querySelector('.form__input-wrapper')
+      plug?.classList.remove('form-input-error')
+    })
+  })
+}

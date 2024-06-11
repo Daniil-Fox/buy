@@ -11,7 +11,22 @@
   &.active {
     transform: translateX(0);
   }
-
+  &__entering {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+  }
+  &__enter {
+    padding: 13px 25px;
+  }
+  &__login {
+    font-weight: 500;
+    font-size: 13px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-align: center;
+    color: #101010;
+  }
   &__body {
     height: 100%;
     width: calc(100% - 60px);
