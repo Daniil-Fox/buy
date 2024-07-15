@@ -1,0 +1,60 @@
+.my-portfolio {
+  padding: 33px 30px;
+  box-shadow: 0 4px 13px 0 rgba(30, 35, 66, 0.11);
+  background: #fff;
+  border-radius: 13px;
+  &__label {
+    display: block;
+    margin-bottom: 40px;
+    width: 100%;
+    height: 170px;
+    border: 2px dashed #e2e5ed;
+    border-radius: 13px;
+    padding: 54px 120px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    @include small-tablet {
+      padding: 50px 30px;
+    }
+    @include mobile {
+      padding: 50px 18px;
+    }
+    span {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 156%;
+      color: #9ea3b1;
+
+      @include mobile {
+        font-size: 13px;
+      }
+    }
+  }
+  &__icon {
+    width: 63px;
+    height: 63px;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__add {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+  &__items {
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+
+    .portfolio__item {
+      @include mobile {
+        height: 150px;
+      }
+    }
+  }
+}

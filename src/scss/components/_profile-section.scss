@@ -1,11 +1,10 @@
 .profile-section {
-
   &__title {
     margin-bottom: 32px;
     text-align: left;
     grid-column: 12 span;
 
-    @include small-tablet {
+    @include tablet {
       order: 5;
     }
   }
@@ -31,7 +30,7 @@
       width: 14px;
       height: 14px;
       transform: rotate(180deg);
-      transition: transform .3s ease-out;
+      transition: transform 0.3s ease-out;
     }
 
     &.active {
@@ -55,11 +54,10 @@
   }
 
   &__body {
-
     max-height: 0;
     overflow: hidden;
     box-sizing: content-box;
-    transition: max-height .3s ease-out;
+    transition: max-height 0.3s ease-out;
     will-change: max-height;
   }
 
@@ -71,4 +69,3 @@
     }
   }
 }
-
