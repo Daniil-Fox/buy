@@ -69,11 +69,13 @@ const modalSignin = document.querySelector(".modal-signin");
 const modalPayment = document.querySelector(".modal-payment");
 const modalAccept = document.querySelector(".accept");
 const modalConfirm = document.querySelector(".confirm");
+const modalOffer = document.querySelector(".offer-send");
 const loginBtn = document.querySelector(".login-btn");
 const signInBtn = document.querySelector(".signin-btn");
 const paymentBtn = document.querySelector(".payment-btn");
 const acceptBtn = document.querySelectorAll('.accept-btn');
 const confirmBtn = document.querySelectorAll('.confirm-btn');
+const offerBtn = document.querySelectorAll('.offer-btn');
 const modals = document.querySelectorAll(".modal");
 loginBtn?.addEventListener("click", e => {
   e.preventDefault();
@@ -92,6 +94,14 @@ if (confirmBtn.length > 0) {
     b.addEventListener("click", e => {
       e.preventDefault();
       modalConfirm.classList.add("active");
+    });
+  });
+}
+if (offerBtn.length > 0) {
+  offerBtn.forEach(b => {
+    b.addEventListener("click", e => {
+      e.preventDefault();
+      modalOffer.classList.add("active");
     });
   });
 }
