@@ -4,11 +4,12 @@
   align-self: flex-start;
   gap: 17px;
 
-  &:not(:last-child){
+  &:not(:last-child) {
     padding-bottom: 24px;
     margin-bottom: 30px;
     border-bottom: 1px solid #dee1e9;
   }
+
   &__time {
     position: absolute;
     right: 0;
@@ -19,6 +20,7 @@
     text-align: right;
     color: #9ea3b1;
   }
+
   &__name {
     display: flex;
     margin-bottom: 15px;
@@ -28,19 +30,24 @@
     font-size: 14px;
     color: #101010;
     padding-right: 100px;
-    .online, .ofline {
+
+    .online,
+    .ofline {
       display: block;
       width: 9px;
       height: 9px;
       border-radius: 100%;
     }
+
     .online {
       background-color: #6fc727;
     }
+
     .ofline {
       background-color: #ccc;
     }
   }
+
   &__image {
     flex-shrink: 0;
     width: 45px;
@@ -53,6 +60,15 @@
       width: 100%;
       height: 100%;
     }
+
+    &--admin {
+      background-color: #d7f7e9;
+      padding: 5px;
+
+      img {
+        object-fit: contain;
+      }
+    }
   }
 
   &__text {
@@ -62,6 +78,10 @@
     font-size: 14px;
     line-height: 164%;
     color: #101010;
+
+    &:not(:last-child) {
+      margin-bottom: 13px;
+    }
   }
 
   &__files {
@@ -85,11 +105,13 @@
     font-size: 14px;
     line-height: 164%;
     color: #2f4aac;
+
     svg {
-       width: 24px;
-       height: 24px;
+      width: 24px;
+      height: 24px;
     }
   }
+
   &__buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -101,6 +123,7 @@
       flex-direction: column;
     }
   }
+
   &__btn {
     flex: 1;
     display: flex;
@@ -112,20 +135,24 @@
       flex: unset;
     }
   }
+
   &__cancel {
     font-weight: 400;
     font-size: 14px;
     line-height: 164%;
     color: #9ea3b1;
   }
+
   &--pass {
     .message__name {
       font-size: 15px;
       margin-top: 15px;
     }
+
     .message__time {
       top: 15px;
     }
+
     .message__content {
       flex-grow: 1;
     }
@@ -139,12 +166,15 @@
     border-radius: 13px;
     overflow: hidden;
     height: 200px;
+
     @include small-tablet {
       height: 165px;
     }
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-bottom: 12px;
     }
+
     img {
       width: 100%;
       height: 100%;
@@ -159,18 +189,21 @@
     align-items: center;
     gap: 7px;
   }
+
   &__capture {
     font-weight: 600;
     font-size: 14px;
     line-height: 121%;
     color: #101010;
   }
+
   &__size {
     font-weight: 400;
     font-size: 13px;
     color: #9ea3b1;
   }
 }
+
 .message-form {
   display: block;
   height: 53px;
@@ -183,16 +216,20 @@
   align-items: center;
   border: 1px solid #e2e5ed;
   padding: 14px;
+
   &__input {
     display: block;
     flex-grow: 1;
     width: 100%;
     background: none;
+
     &:focus {
       outline: none;
     }
   }
-  &__file, &__emoji {
+
+  &__file,
+  &__emoji {
     flex-shrink: 0;
     display: block;
     width: 24px;
@@ -204,5 +241,3 @@
     }
   }
 }
-
-

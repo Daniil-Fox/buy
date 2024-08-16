@@ -1,0 +1,243 @@
+<section class="dialogue">
+  <div class="container">
+    <div class="dialogue__container">
+      <div class="dialogue__order order">
+        <div class="order__top">
+          <div class="order__header">
+            <span class="order__title">
+              Сайт для Моно-бренда с функцией поиска ближайшей точки продажи
+            </span>
+            <span class="order__price"> 2000 руб. </span>
+          </div>
+
+          <ul class="order__breadcrumbs breadcrumbs list-reset">
+            <li><a href="#">Мои заказы</a></li>
+            <li>Заказ №24524642</li>
+          </ul>
+
+          <p class="order__desc">
+            Сайт для ТМ Капитан, производящий пиво и имеющий 4 торговых марки
+            пива – Капитан Сильвер, Капитан Голд, Капитан Блэк и Капитан
+            Жигулевское Админка: возможность добавлять и удалять товары
+            самостоятельно;
+            <br />
+            <br />
+            Возможность привязывать адрес точки продаж к каждому товару;
+          </p>
+        </div>
+        <div class="order__bottom">
+          <div class="order__left">
+            <span class="order__created"
+              >Создан:
+              <time datetime="04.15.2024 14:30">15 апреля в 14:30</time></span
+            >
+
+            <span class="order__left">Осталось 3 дня</span>
+          </div>
+
+          <a href="#" class="order__cancel">Отменить заказ</a>
+        </div>
+      </div>
+
+      <div class="dialogue__status order-status">
+        <div class="order-status__top">
+          <div class="order-status__row">
+            <span class="order-status__capture">Статус заказа:</span>
+            <span class="order-status__status order-status__status--done"
+              >Выполнен</span
+            >
+            <!-- or proc -->
+          </div>
+          <span class="order-status__capture"
+            >Статус заказа: <span>2000 руб.</span></span
+          >
+        </div>
+        <div class="order-status__middle">
+          <span class="order-status__capture order-status__header">
+            Исполнитель:
+          </span>
+
+          <div class="order-status__perf">
+            <img src="./img/avatars/05.png" alt="" />
+            <div class="order-status__col">
+              <span class="order-status__name">Ксения Иванова</span>
+              <span class="order-status__innet order-status__innet--online">
+                <!-- or ofline -->
+                Онлайн
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="order-status__map order-map">
+          <div class="order-map__status">
+            <span class="order-map__position order-map__position--done"
+              >Создан</span
+            >
+            <span class="order-map__position order-map__position--done"
+              >Заказ оплачен</span
+            >
+            <span class="order-map__position order-map__position--done"
+              >Взят в работу</span
+            >
+            <span class="order-map__position order-map__position--done"
+              >Предоставлены данные</span
+            >
+            <span class="order-map__position order-map__position--done"
+              >Сдан на проверку</span
+            >
+            <span class="order-map__position">Заказ принят</span>
+          </div>
+        </div>
+      </div>
+      <div class="dialogue__messages">
+        <h2 class="title2 dialogue__title">Обсуждение заказа</h2>
+        <div class="dialogue__body">
+          <div class="message">
+            <time datetime="01.12.2024 10:15" class="message__time">
+              12.01.2024 10:15
+            </time>
+            <div class="message__image message__image--admin">
+              <img src="./img/admin/tablet.svg" alt="" />
+            </div>
+            <div class="message__content">
+              <span class="message__name"> Создан новый заказ </span>
+
+              <p class="message__text">
+                Покупатель создал заказ.<br />
+                Покупатель следовал вашим инструкциям. Если отправленной
+                информации недостаточно, уточните ее, отправив сообщение
+                покупателю.
+              </p>
+            </div>
+          </div>
+          <div class="message">
+            <time datetime="01.12.2024 10:15" class="message__time">
+              12.01.2024 10:15
+            </time>
+            <div class="message__image">
+              <img src="./img/avatars/09.png" alt="" />
+            </div>
+            <div class="message__content">
+              <span class="message__name">
+                <span class="online"></span>
+                <!--or ofline -->
+                alexmedia
+              </span>
+
+              <p class="message__text">
+                Добрый день!<br />
+                Нужно 2 картинки для авито.<br />
+                1 пойдет на главный экран<br />
+                2 подложка для текста<br />
+              </p>
+            </div>
+          </div>
+          <div class="gowork__buttons">
+            <form action="#" class="message__buttons">
+              <button class="btn-reset message__btn btn accept-btn">
+                Приступаю к работе
+              </button>
+              <button class="btn-reset message__btn btn btn--gray">
+                Написать сообщение
+              </button>
+            </form>
+          </div>
+          <p class="check-list gowork__warning">
+            Если вы не приступите к работе в течение 24 часов, заказ будет
+            отменен. Автоотмена заказа снижает ваш рейтинг ответственности и
+            негативно сказывается на продажах. Ваш профиль перейдет в статус
+            “Занят”, кворки будут скрыты из каталога, а отклики удалены.
+          </p>
+          <div class="message message--pass">
+            <div class="message__content">
+              <form action="#" class="message-form message__form">
+                <input type="file" id="message-file" class="visually-hidden" />
+                <label for="message-file" class="message-form__file">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_20928_6921)">
+                      <path
+                        d="M23.9015 9.57312C23.5104 9.18213 22.8764 9.18213 22.4853 9.57312L11.5763 20.5292C9.62059 22.4852 6.44966 22.4854 4.4937 20.5298C2.53774 18.5741 2.53755 15.4031 4.49318 13.4472L15.0587 2.83862C16.2415 1.67468 18.1439 1.68994 19.3078 2.87271C20.4584 4.0419 20.4586 5.91777 19.3084 7.08725L8.74285 17.6958C8.34693 18.0751 7.72252 18.0751 7.32665 17.6958C6.93567 17.3047 6.93567 16.6707 7.32665 16.2796L16.7333 6.82988C17.1176 6.43199 17.1066 5.79796 16.7087 5.41369C16.3206 5.0388 15.7053 5.0388 15.3172 5.41369L5.91046 14.8634C4.73694 16.0367 4.7368 17.9392 5.91008 19.1127C5.91022 19.1129 5.91032 19.113 5.91046 19.1131C7.0997 20.2479 8.97083 20.2479 10.1601 19.1131L20.7246 8.50354C22.6552 6.52312 22.6147 3.35261 20.6343 1.422C18.6893 -0.474189 15.5872 -0.473954 13.6425 1.42243L3.07699 12.031C0.33892 14.769 0.33892 19.2084 3.07699 21.9464C5.81506 24.6845 10.2544 24.6845 12.9925 21.9464L23.9015 10.9933C24.2937 10.6033 24.2954 9.96912 23.9053 9.57692C23.904 9.57565 23.9028 9.57438 23.9015 9.57312Z"
+                        fill="#9EA3B1"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_20928_6921">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.609375)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </label>
+
+                <label class="message-form__emoji">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_20928_6924)">
+                      <path
+                        d="M12 24C5.383 24 0 18.617 0 12C0 5.383 5.383 0 12 0C18.617 0 24 5.383 24 12C24 18.617 18.617 24 12 24ZM12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM17.666 15.746C18.078 15.378 18.114 14.746 17.746 14.334C17.549 14.113 17.275 14 17 14C16.763 14 16.525 14.084 16.334 14.254C16.316 14.27 14.331 16 12 16C9.669 16 7.684 14.27 7.664 14.252C7.251 13.886 6.62 13.924 6.253 14.336C5.887 14.748 5.922 15.378 6.334 15.745C6.437 15.837 8.893 17.999 12 17.999C15.107 17.999 17.563 15.837 17.666 15.745V15.746ZM17 9.5C17 8.672 16.328 8 15.5 8C14.672 8 14 8.672 14 9.5C14 10.328 14.672 11 15.5 11C16.328 11 17 10.328 17 9.5ZM10 9.5C10 8.672 9.328 8 8.5 8C7.672 8 7 8.672 7 9.5C7 10.328 7.672 11 8.5 11C9.328 11 10 10.328 10 9.5Z"
+                        fill="#9EA3B1"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_20928_6924">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="matrix(1 0 0 -1 0 24)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </label>
+
+                <input
+                  type="text"
+                  placeholder="Сообщение продавцу"
+                  class="message-form__input input-reset"
+                />
+
+                <button class="btn-reset message-form__voice">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_20928_6926)">
+                      <path
+                        d="M12 0C5.383 0 0 5.383 0 12C0 18.617 5.383 24 12 24C18.617 24 24 18.617 24 12C24 5.383 18.617 0 12 0ZM12 22C6.486 22 2 17.514 2 12C2 6.486 6.486 2 12 2C17.514 2 22 6.486 22 12C22 17.514 17.514 22 12 22ZM18 12C18 14.968 15.834 17.439 13 17.916V19C13 19.552 12.553 20 12 20C11.447 20 11 19.552 11 19V17.916C8.166 17.439 6 14.968 6 12C6 11.448 6.447 11 7 11C7.553 11 8 11.448 8 12C8 14.206 9.794 16 12 16C14.206 16 16 14.206 16 12C16 11.448 16.447 11 17 11C17.553 11 18 11.448 18 12ZM10 12V7C10 5.895 10.895 5 12 5C13.105 5 14 5.895 14 7V12C14 13.105 13.105 14 12 14C10.895 14 10 13.105 10 12Z"
+                        fill="#9EA3B1"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_20928_6926">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

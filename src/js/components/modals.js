@@ -4,10 +4,17 @@ const modalSignin = document.querySelector(".modal-signin");
 
 const modalPayment = document.querySelector(".modal-payment");
 
+const modalAccept = document.querySelector(".accept");
+
+const modalConfirm = document.querySelector(".confirm");
+
 const loginBtn = document.querySelector(".login-btn");
 const signInBtn = document.querySelector(".signin-btn");
 
 const paymentBtn = document.querySelector(".payment-btn");
+
+const acceptBtn = document.querySelectorAll('.accept-btn')
+const confirmBtn = document.querySelectorAll('.confirm-btn')
 
 const modals = document.querySelectorAll(".modal");
 
@@ -15,6 +22,24 @@ loginBtn?.addEventListener("click", (e) => {
   e.preventDefault();
   modalLogin.classList.add("active");
 });
+
+if(acceptBtn.length > 0){
+  acceptBtn.forEach(b => {
+    b.addEventListener("click", (e) => {
+      e.preventDefault();
+      modalAccept.classList.add("active");
+    });
+  })
+}
+
+if(confirmBtn.length > 0){
+  confirmBtn.forEach(b => {
+    b.addEventListener("click", (e) => {
+      e.preventDefault();
+      modalConfirm.classList.add("active");
+    });
+  })
+}
 
 paymentBtn?.addEventListener("click", (e) => {
   e.preventDefault();
@@ -36,7 +61,11 @@ signInBtn?.addEventListener("click", (e) => {
 
 modals.forEach((el) => {
   const body = el.querySelector(".modal__body");
+  const modalClose = el.querySelector('.modal__close')
   el.addEventListener("click", (e) => {
+    el.classList.remove("active");
+  });
+  modalClose?.addEventListener("click", (e) => {
     el.classList.remove("active");
   });
 

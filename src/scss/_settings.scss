@@ -143,6 +143,27 @@ a {
     font-size: 13px;
     text-align: center;
     color: #101010;
+
+
+  }
+}
+
+.title1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 35px;
+  color: #101010;
+
+  @include tablet {
+    font-size: 25px;
+  }
+
+  @include small-tablet {
+    font-size: 20px;
+  }
+
+  @include mobile {
+    font-size: 16px;
   }
 }
 
@@ -159,6 +180,63 @@ a {
   }
 }
 
+.subtitle1 {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 24px;
+  color: #101010;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include small-tablet {
+    font-size: 18px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 164%;
+  color: #101010;
+  margin-bottom: 25px;
+
+  &>li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+
+      @include small-tablet {
+        margin-bottom: 10px;
+      }
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      flex-shrink: 0;
+      width: 25px;
+      height: 25px;
+      background-image: url('./../img/check-green.svg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
 .blue-bg {
   background-color: #f7f8fb;
 }
@@ -169,6 +247,7 @@ a {
   gap: 20px;
   padding-bottom: 70px;
   padding-top: 35px;
+
   @include tablet {
     display: flex;
     flex-direction: column-reverse;
@@ -186,6 +265,9 @@ a {
 .custom-select {
   position: relative;
 
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
 
 
   &__dropdown {
@@ -227,6 +309,7 @@ a {
     border-color: transparent;
 
     transition: background-color .3s ease-out, border-color .3s ease-out;
+
     &:not(:last-child) {
       margin-bottom: 10px;
     }
@@ -236,11 +319,12 @@ a {
       border-color: #e2e5ed;
     }
   }
+
   &__header {
     cursor: pointer;
     background-color: #f7f8fb;
-      border-color: #e2e5ed;
-      height: 56px;
+    border-color: #e2e5ed;
+    height: 56px;
   }
 
 }
@@ -249,11 +333,11 @@ a {
   display: inline-block;
   margin-bottom: 35px;
   font-family: var(--font-family);
-font-weight: 500;
-font-size: 15px;
-text-decoration: underline;
-text-decoration-skip-ink: none;
-color: #2f4aac;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #2f4aac;
 }
 
 .pagination {
@@ -266,6 +350,7 @@ color: #2f4aac;
     font-size: 15px;
     color: #101010;
     cursor: pointer;
+
     &.active {
       color: #6fc727;
     }
@@ -280,6 +365,7 @@ color: #2f4aac;
   font-size: 15px;
   line-height: 193%;
   color: #101010;
+
   &__title {
     margin-bottom: 20px;
     text-align: left;
@@ -289,6 +375,7 @@ color: #2f4aac;
     font-weight: 500;
     font-size: 20px;
   }
+
   h3 {
     font-weight: 500;
     font-size: 18px;
@@ -309,6 +396,7 @@ color: #2f4aac;
       border-radius: 13px;
       background-color: #62b023;
     }
+
     p {
       border-radius: 13px;
       background-color: #f7f8fb;
@@ -321,4 +409,77 @@ color: #2f4aac;
       color: #101010;
     }
   }
+}
+
+.gowork__buttons {
+  margin-bottom: 15px;
+}
+
+.gowork__warning {
+  font-weight: 600;
+  margin-bottom: 30px;
+
+  @include mobile {
+    margin-bottom: 15px;
+  }
+}
+
+.message__content--pass {
+  border: 1px solid #dee1e9;
+  border-radius: 13px;
+  overflow: hidden;
+}
+
+.pass__header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f8fb;
+
+  .message__name {
+    font-weight: 600;
+    margin: 0;
+    padding-right: 10px;
+  }
+}
+
+.pass__time {
+  position: static !important;
+  flex-shrink: 0;
+}
+
+.pass__text {
+  margin: 0;
+  padding: 15px 0px;
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 164%;
+  text-align: center;
+  color: #101010;
+}
+
+.pass__buttons {
+  margin-top: 30px;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  @include small-tablet {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px 10px;
+  }
+}
+
+.pass__btn {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

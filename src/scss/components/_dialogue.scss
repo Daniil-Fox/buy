@@ -1,5 +1,6 @@
 .dialogue {
   padding: 45px 0;
+
   &__container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -17,13 +18,17 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
   &__messages {
     grid-column: 8 span;
+    margin-top: 40px;
   }
+
   &__title {
     text-align: left;
     margin-bottom: 24px;
   }
+
   &__body {
     box-shadow: 0 4px 13px 0 rgba(30, 35, 66, 0.11);
     background: #fff;
@@ -40,6 +45,7 @@
   &__top {
     padding: 35px 30px;
   }
+
   &__title {
     display: block;
     max-width: 525px;
@@ -52,6 +58,7 @@
       font-size: 18px;
     }
   }
+
   &__price {
     display: block;
     flex-shrink: 0;
@@ -59,6 +66,7 @@
     font-size: 22px;
     color: #101010;
   }
+
   &__header {
     display: flex;
     align-items: flex-start;
@@ -66,12 +74,14 @@
     gap: 40px;
 
     margin-bottom: 18px;
+
     @include small-tablet {
       flex-direction: column;
       gap: 10px;
       margin-bottom: 10px;
     }
   }
+
   &__breadcrumbs {
     margin-bottom: 18px;
   }
@@ -100,12 +110,14 @@
     gap: 30px;
     flex-wrap: wrap;
   }
+
   &__created {
     font-weight: 600;
     font-size: 14px;
     line-height: 164%;
     color: #101010;
   }
+
   &__left {
     font-style: italic;
     font-weight: 400;
@@ -113,6 +125,7 @@
     line-height: 164%;
     color: #101010;
   }
+
   &__cancel {
     font-weight: 400;
     font-size: 14px;
@@ -128,17 +141,20 @@
   background: #fff;
   border-radius: 13px;
   grid-column: 4 span;
+
   &__top {
     padding: 27px;
     padding-bottom: 20px;
     border-bottom: 1px solid #dee1e9;
   }
+
   &__row {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 15px;
   }
+
   &__capture {
     display: block;
     font-weight: 400;
@@ -149,6 +165,7 @@
       font-weight: 700;
     }
   }
+
   &__status {
     border-radius: 90px;
     padding: 0px 10px;
@@ -157,9 +174,11 @@
     font-size: 14px;
     line-height: 164%;
     color: #fff;
+
     &--done {
       background-color: #6fc727;
     }
+
     &--proc {
       background-color: #ffa500;
     }
@@ -195,6 +214,7 @@
     font-size: 18px;
     color: #101010;
   }
+
   &__innet {
     position: relative;
     display: flex;
@@ -238,7 +258,8 @@
     font-weight: 600;
     font-size: 13px;
     color: #101010;
-    &:not(:last-child){
+
+    &:not(:last-child) {
       margin-bottom: 20px;
     }
 
@@ -279,6 +300,7 @@
     margin-top: 10px;
     margin-bottom: 30px;
   }
+
   &__text {
     margin: 0;
 
@@ -286,17 +308,20 @@
     font-size: 13px;
     color: #101010;
   }
+
   &__btn {
     display: block;
     width: 36px;
     height: 36px;
     flex-shrink: 0;
+
     svg {
       object-fit: contain;
       width: 100%;
       height: 100%;
       fill: #CBD0DE;
     }
+
     &.active {
       svg {
         fill: #6fc727;
@@ -306,6 +331,7 @@
 
   &__send {
     margin-top: 25px;
+
     @include mobile {
       display: flex;
       width: 100%;
